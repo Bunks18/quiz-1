@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+
+  <script src="lee-1.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+<title>Title of the document</title>
+</head>
+
+<body>
+
+  <div class="main">
+
+    <div class="formBox start">
+     <h3>Welcome to the best Quiz</h3>
+     <button id="start1" type="submit" class="btn btn-primary next">Begin Quiz</button>
+    </div>
+
+    <div class="questions" style="display:none;">
+      <span class="question-text">
+
+      </span>
+        <!-- <form name="myForm" > -->
+
+        <input id="choice-1" type='radio' name='choices' value='' required>
+        <span class="spanText" id="choice-1-text"></span>
+
+        <input id="choice-2" type='radio' name='choices' value='' required>
+        <span class="spanText" id="choice-2-text"></span>
+
+        <input id="choice-3" type='radio' name='choices' value='' required>
+        <span class="spanText" id="choice-3-text"></span>
+          <button type="submit" class="submit btn btn-primary">Submit</button>
+        <!-- </form> -->
+
+    </div>
+
+      <section class="results" style="display:none">
+          <span class="message"></span>
+          <span class="answer"></span>
+          <button type="submit" class="next btn btn-primary">Next Question</button>
+          <button class="btn-primary seeResults" style="display:none;"> See Results </button>
+          <button class="btn-primary reset" style="display:none;">Play Again</button>
+      </section>
+
+
+    <div class="buttons">
+
+
+    </div>
+
+
+  </div>
+
+
+
+</body>
+
+
+</html>
