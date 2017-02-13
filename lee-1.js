@@ -62,10 +62,12 @@ state.questions.push(ques5);
 
 
 var score = state.score;
-var currentIndex = state.currentQuestionIndex;
+// var currentIndex = state.currentQuestionIndex;
 
 
-function startQuiz(state, index){
+function startQuiz(state){
+
+	state.currentQuestionIndex === 0;
 
 	var currentQuestion = state.questions[state.currentQuestionIndex].text;
 
@@ -135,7 +137,7 @@ function validateAnswer(state){
 		}
 		else {
 			score = score;
-			$('.message').text("The Correct Answer is " + answer + " ,You Suck Amelia");
+			$('.message').text("The Correct Answer is " + answer + " ,You're Wrong");
 		}
 		console.log(score);
 		$('.message')
